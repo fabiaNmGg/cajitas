@@ -1,0 +1,106 @@
+.contenedor /*padre*/ 
+{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 10fr 1fr;
+    grid-template-areas: 
+        "cabecera cabecera cabecera"
+        "menu      menu    menu"
+        "contenido contenido publi"
+        "pie        pie       pie";
+}
+
+
+.contenedor>div
+{
+    background-color: chartreuse;
+}
+
+.contenedor .cabecera 
+{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+
+.contenedor .menu
+{
+    background-color: coral;
+    grid-column: menu;
+}
+
+.contenido
+{   
+    padding: 30px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 80px 200px;
+     grid-template-areas: 
+        "p p"
+        "cajita cajita2";
+}
+
+.publi
+{
+    padding: 30px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 80px 1fr 1fr ;
+     grid-template-areas:
+        "p "
+        "texto1"
+        "texto2";
+}
+
+.contenedor .contenido
+{
+    background-color: beige;
+    grid-column: contenido;
+}
+
+.contenedor .publi
+{
+    background-color: antiquewhite;
+    grid-column: publi;
+}
+
+.contenedor .pie
+{
+    background-color: darkkhaki;
+    grid-column: pie;
+}
+
+.contenedor .contenido .p
+{
+    grid-column: p;
+}
+
+.contenedor .contenido .cajita
+{
+    background-color: red;
+    grid-column: cajita;
+}
+
+.contenedor .contenido .cajita2
+{
+    background-color: blueviolet;
+    grid-column: cajita2;
+}
+
+.contenedor .publi .texto1
+{
+    background-color: crimson;
+    grid-column: texto1;
+}
+
+.contenedor .publi .texto2
+{
+    background-color: blue;
+    grid-column: texto2;
+}
